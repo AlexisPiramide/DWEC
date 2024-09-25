@@ -1,6 +1,7 @@
 //Ejercicios Tipos de datos
 
 //1
+
 /*
 let variable1 = 1357;
 let variable2 = 135.7;
@@ -38,14 +39,14 @@ alert(`Dentor de ${numero} años tendras ${edad+numero} años`);
 
 */
 //4
-/*
+
 let string = prompt();
 
 if(string.indexOf("a")){
     let posicion = string.indexOf("a")
     alert(`La posicion de la primera a es ${posicion+1} letra`)
 }
-*/
+
 //5
 /*
 let frase1 = prompt('Frase 1');
@@ -71,11 +72,18 @@ console.log(result)
 
 */
 // 7
-
+/*
 let frase1 = prompt('Frase 1');
 let frase2 = prompt('Frase 2');
 
+let fraseTratada = frase1
+let totalocurrencias= 0;
 
-if(frase1.indexOf(frase2)){
-    
+while (fraseTratada.includes(frase2)){
+    fraseTratada= fraseTratada.replace(frase2,"");
+    totalocurrencias++;
 }
+
+console.log(totalocurrencias + " veces se repite la frase "+ frase2+ " en la frase "+frase1);
+*/
+
