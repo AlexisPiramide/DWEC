@@ -86,7 +86,7 @@ while(validar){
         numero = prompt("Dame un numero del 1 al 10");
     }else{
         validar=false;
-    }
+    } 
 }
 
 console.log("--------------------");
@@ -99,7 +99,19 @@ for(let i= 0; i <10; i++){
 console.log("--------------------");
 */
 
-//16
+//16 y 17
+/*
+let fruta = prompt("Dame una fruta").toLowerCase();
+function traducir(fruta){
+    switch(fruta){
+        case("pera"):return "Pear";
+        case("manzana"):return "Apple";
+        case("piña"):return "Pinapple";
+        case("fresa"):return "Strawberry";
+        case("naranja"):return "Orange";
+        default:return"no tenemos traduccion";
+    }
+}
 
-let frutas = ["Pera","Manzana","Piña","Fresa","Naranja"];
-let frutastraducidas = ["Pear","Apple","Pinapple","Strawberry","Orange"];
+alert (fruta + " en ingles "+ traducir(fruta));
+*/
