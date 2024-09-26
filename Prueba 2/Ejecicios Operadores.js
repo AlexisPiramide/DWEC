@@ -115,3 +115,62 @@ function traducir(fruta){
 
 alert (fruta + " en ingles "+ traducir(fruta));
 */
+/**
+ 
+xx*xx
+x***x
+*****
+x***x
+xx*xx
+
+*/
+//18
+
+
+function dibujaRombos(numeroLineas){
+    
+    let rombo = '';
+    let mitad = Math.floor(numeroLineas / 2);
+
+
+    for (let i = 0; i <= mitad; i++) {
+        let espacios = ' '.repeat(mitad - i);
+        let asteriscos = '*'.repeat(2 * i + 1);
+        rombo += espacios + asteriscos + '\n';
+    }
+
+    for (let i = mitad - 1; i >= 0; i--) {
+        let espacios = ' '.repeat(mitad - i);
+        let asteriscos = '*'.repeat(2 * i + 1);
+        rombo += espacios + asteriscos + '\n';
+    }
+
+    console.log(rombo)
+}
+
+
+
+//19
+
+function dibujaRombosVacios(numeroLineas){
+    
+    let rombo = '';
+    let mitad = Math.floor(numeroLineas / 2);
+
+
+    for (let i = 0; i <= mitad; i++) {
+        let espacios = ' '.repeat(mitad - i);
+        let asteriscos = '*'+' '.repeat(2 * i)+'*';
+        rombo += espacios + asteriscos + '\n';
+    }
+
+    for (let i = mitad - 1; i >= 0; i--) {
+        let espacios = ' '.repeat(mitad - i);
+        let asteriscos = '*'+' '.repeat(2 * i)+'*';
+        rombo += espacios + asteriscos + '\n';
+    }
+
+    console.log(rombo)
+}
+
+dibujaRombosVacios(10)
